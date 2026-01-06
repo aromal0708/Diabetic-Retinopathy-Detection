@@ -2,8 +2,8 @@ from torchvision import models
 import torch.nn as nn
 import torch
 import os
-from modules.ala import ALA_Module
-from modules.csca import CSCA_Module  # ✅ Added CSCA module
+from src.modules.ala import ALA_Module
+from src.modules.csca import CSCA_Module  # ✅ Added CSCA module
 
 class CLANet_DenseNet(nn.Module):
     def __init__(self, num_classes=5, pretrained_weights=None):
